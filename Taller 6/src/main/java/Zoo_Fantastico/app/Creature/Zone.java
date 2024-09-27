@@ -1,6 +1,4 @@
 package Zoo_Fantastico.app.Creature;
-
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import javax.persistence.*;
