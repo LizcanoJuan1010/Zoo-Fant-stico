@@ -70,21 +70,12 @@ public class CreatureService {
 
     public void deleteCreature(Long id) {
         Creature creature = getCreatureById(id);
-
-
         if (!"critical".equals(creature.getHealthStatus())) {
-
-            Zone zone = creature.getZone();
-            if (zone != null) {
-                zone.setPoblation(zone.getPoblation() - 1);
-                zoneRepository.save(zone);
-            }
             creatureRepository.delete(creature);
         } else {
             throw new IllegalStateException("Cannot delete a creature in critical health");
         }
     }
-
 }
 
 
