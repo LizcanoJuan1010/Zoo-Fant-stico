@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: Zoo_Fantastico.app.CreatureServiceTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.671 s <<< FAILURE! -- in Zoo_Fantastico.app.CreatureServiceTest
+Zoo_Fantastico.app.CreatureServiceTest.testDeleteCreature_ShouldDelete -- Time elapsed: 0.043 s <<< FAILURE!
+Wanted but not invoked:
+zoneRepository.save(
+    <any Zoo_Fantastico.app.Creature.Zone>
+);
+-> at Zoo_Fantastico.app.CreatureServiceTest.testDeleteCreature_ShouldDelete(CreatureServiceTest.java:172)
+Actually, there were zero interactions with this mock.
+
+	at Zoo_Fantastico.app.CreatureServiceTest.testDeleteCreature_ShouldDelete(CreatureServiceTest.java:172)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
